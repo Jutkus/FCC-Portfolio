@@ -1,1 +1,64 @@
+/* Social Media & Contact Placement Below */
 
+.email {
+    text-align: center;
+}
+.social-media {
+    text-align: center;
+  }
+.profile-link {
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    background: #f1f1f1;
+    margin: 10px;
+    border-radius: 30%;
+    box-shadow: 0 5px 15px -5px #00000070;
+    color: #3498db;
+    overflow: hidden;
+    position: relative;
+}
+.profile-link i {
+    line-height: 90px;
+    font-size: 26px;
+    transition: 0.2s linear;
+}
+
+/*Social Media & Contant Placement Above*/
+/* Social Media Button Animation Below */
+
+.profile-link:hover i {
+    transform: scale(1.3);
+    color: #f1f1f1;
+}
+.profile-link::before {
+    content: " ";
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: #3498db;
+    transform: rotate(45deg);
+    left: -110%;
+    top: 90%;
+}
+.profile-link:hover::before {
+    animation: slide 0.7s 1;
+    top: -10%;
+    left: -10%;
+}
+@keyframes slide {
+    0% {
+        left: -110%;
+        top: 90%;
+    }
+    50% {
+        left: 10%;
+        top: -30%;
+    }
+    100% {
+        text-outline: -10%;
+        left: -10%;
+    }
+}
+
+/* Social Media Button Animation Above */
