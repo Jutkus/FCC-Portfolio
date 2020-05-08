@@ -1,11 +1,173 @@
-/* Social Media & Contact Placement Below */
 
-.email {
+/* Base Settings Below */
+
+* {
+    font-family: 'Arimo', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+body {
+    background-color: #FDF7EE;
+}
+
+/* Base Settings Above */
+/* Navigation Below */
+
+#navbar {
+    background: #7C3238;
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    color: white;
+}
+#navbar p {
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 2rem;
+    font-weight: bold;
+    padding-left: 1rem;
+}
+.nav-list {
+    display: flex;
+    list-style: none;
+    padding: 1.5rem 0 1.5rem 0;
+}
+.nav-list > li > a {
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    padding-right: 2rem;
+    color: white;
+}
+@media (max-width: 768px) {
+    .nav-list {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    #navbar p {
+        display: none;
+    }
+  .nav-list {
+    padding: .5rem;
+  }
+}
+
+/* Navigation Above */
+/* Welcome Page Below */
+
+#welcome-section {
+    background: #1B2021;
+    color: #FDF7EE;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 3rem;
+}
+@media (max-width:  500px) {
+  #welcome-section {
+    font-size: 1.5rem;
+  }
+}
+
+/* Welcome Page Above* /
+/* Main Page Below */
+
+.title {
+    text-align: center;
+    font-size: 3rem;
+}
+#about-me {
+    width: 90vw;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    padding: 3rem 0 3rem 0;
     text-align: center;
 }
-.social-media {
-    text-align: center;
+
+#skillset {
+    padding: 2rem 0 3rem 0;
+}
+.skillsub {
+    padding-top: 1rem;
+}
+.sub-icons {
+    color: #7C3238;
+    font-size: 90px;
+}
+.skill-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+@media (max-width: 768px) {
+.skill-list {
+    font-size: 1.1rem;
   }
+}
+#projects {
+    display: grid;
+    grid-template-columns: repeat(2, 30vw);
+    align-items: center;
+    justify-content: center;
+    grid-gap: 2em;
+    padding: 5em 0 5em 0;
+}
+#projects > a {
+    text-align: center;
+    border: 1px #7C3238 solid;
+    border-radius: 10px;
+    padding: .5rem;
+    transition: all .2s ease-in-out;
+}
+#projects > a > img {
+    display: block;
+    width: 100%;
+}
+#projects > a:hover {
+    transform: scale(1.1)
+}
+@media (max-width: 768px) {
+    #projects {
+        grid-template-columns: 90vw;
+    }
+}
+
+/* Main Page Above */
+/* Social Media & Contact Placement Below */
+
+#contact {
+    background: #1B2021;
+    color: #FDF7EE;
+    padding: 1em 0 5em 0;
+    text-align: center;
+}
+.email {
+    padding: 4em 0 2em 0;
+}
+.email i {
+    padding-right: .5em;
+}
+.email a {
+    color: #3498db;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+#contact p {
+    padding: 1em;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
 .profile-link {
     display: inline-block;
     width: 90px;
@@ -13,7 +175,6 @@
     background: #f1f1f1;
     margin: 10px;
     border-radius: 30%;
-    box-shadow: 0 5px 15px -5px #00000070;
     color: #3498db;
     overflow: hidden;
     position: relative;
@@ -22,6 +183,15 @@
     line-height: 90px;
     font-size: 26px;
     transition: 0.2s linear;
+}
+@media (max-width: 767px) {
+    .profile-link {
+        width: 70px;
+        height: 70px;
+    }
+    .profile-link i {
+        line-height: 70px;
+    }
 }
 
 /*Social Media & Contant Placement Above*/
@@ -42,7 +212,7 @@
     top: 90%;
 }
 .profile-link:hover::before {
-    animation: slide 0.7s 1;
+    animation: slide 0.3s 1;
     top: -10%;
     left: -10%;
 }
@@ -50,10 +220,6 @@
     0% {
         left: -110%;
         top: 90%;
-    }
-    50% {
-        left: 10%;
-        top: -30%;
     }
     100% {
         text-outline: -10%;
