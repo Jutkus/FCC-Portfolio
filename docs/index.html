@@ -1,30 +1,109 @@
 <head>
+<!-- Script for FCC Test Suite Below -->
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<!-- Connection To CSS File Below -->
 <link rel="stylesheet" type="text/css" href="css/main.css">
+<!-- Font Style Below-->
 <link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+<!-- Social Media & Contact Icon Link Below -->
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
-
 </head>
 
+<!-- Navigation Bar Below -->
+
 <nav id="navbar">
-    <ul>
+    <p>Justin Butkus</p>
+    <ul class="nav-list">
         <li>
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="#about-me">About</a>
         </li>
         <li>
-            <a class="nav-link" href="#">Projects</a>
+            <a class="nav-link" href="#projects">Projects</a>
         </li>
         <li>
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#contact">Contact</a>
         </li>
     </ul>
 </nav>
+
+<!-- Navigation Bar Above -->
+<!-- Welcome Page Below -->
+
 <body>
     <section id="welcome-section">
-    <h1>
-        Welcome
-    </h1>
+            <h1>
+                Hello, I am Justin Butkus
+            </h1>
+            <h2>
+                Jr. Web Developer
+            </h2>
     </section>
+
+<!-- Welcome Page Above -->
+<!-- Main Page Below -->
+
+    <div class="title">
+    <h2>
+        About Me
+    </h2>
+    </div>
+
+    <section id="about-me">
+        <p>I am a self-taught web developer with an ambition to overcome complex tasks & projects. I always enjoyed technology & freelanced for 10 years as a computer technician. After earning my degree, I found myself listing projects where we created databases & worked with SQL. Later I found some courses online about web-development and ever since I enjoyed working with code.</p>
+        <h3 class="skillsub">Education</h3>
+        <div class="sub-icons">
+            <i class="fas fa-university"></i>
+        </div>
+        <P>
+            University of Illinois at Chicago
+        </P>
+        <p>
+            Bachelor's Degree in Accounting
+        </p>
+        <p>3.5 / 4 GPA</p>
+    </section>
+
+    <div class="title">
+    <h2>
+        Experience
+    </h2>
+    </div>
+
+    <section id="skillset">
+        <div class="skill-list">
+            <h3 class="skillsub">HTML & CSS</h3>
+            <div class="sub-icons">
+                <i class="fab fa-html5"></i>
+                <i class="fab fa-css3-alt"></i>
+            </div>
+                <p>
+                    Skilled with structuring clean Web-Pages,
+                </p>
+                <p>
+                    & building responsive designs.
+                </p>
+        </div>
+        <div class="skill-list">
+            <h3 class="skillsub">JavaScript</h3>
+            <div class="sub-icons">
+                <i class="fab fa-js-square"></i>
+            </div>
+                <p>
+                    Novice at using Javascript,
+                </p>
+                <p>
+                    & jQuery to create more complex features.
+                </p>
+        </div>
+    </section>
+
+    <div class="title">
+    <h2>
+        Projects
+    </h2>
+    </div>
+
     <section id="projects">
         <a class="project-tile" id="project-link" target="_blank" href="https://jutkus.github.io/FCC-Technical-Documentation-Page-Project/">
             <img src="https://repository-images.githubusercontent.com/260543564/bf544c80-8cba-11ea-8473-cedfab8ecb8d"/>
@@ -51,20 +130,38 @@
             </p>
         </a>
     </section>
+
+<!-- Main Page Above -->
+<!-- Contact Page Below -->
+
     <section id="contact">
+        <div class="title">
+            <h2>
+                Contact
+            </h2>
+            </div>
         <div class="email">
-                <i class="fab fa-google"></i>
+            <p>Send me an E-Mail</p>
+            <a href="mailto:JxButkus@gmail.com">
+                <i class="fab fa-google">
+                </i>
+                JxButkus@gmail.com
+            </a>
         </div>
+        <p> You can also find me on these platforms </p>
         <div class="social-media">
-            <a class="profile-link" target="_blank" href="#">
+            <a class="profile-link" id="profile-link" target="_blank" href="#">
                 <i class="fab fa-linkedin-in"></i>
             </a>
-            <a class="profile-link" target="_blank" href="#">
-                <i class="fab fa-github"></i>+
+            <a class="profile-link" id="profile-link2" target="_blank" href="#">
+                <i class="fab fa-github"></i>
             </a>
-            <a class="profile-link" target="_blank" href="#">
+            <a class="profile-link" id="profile-link3" target="_blank" href="#">
                 <i class="fab fa-codepen"></i>
             </a>
     </div>
     </section>
+
+<!-- Contact Page Above -->
 </body>
+
